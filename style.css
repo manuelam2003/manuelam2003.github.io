@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #ededed;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  /* footer support */
+  margin-bottom: 100px;
+}
+
+header {
+  padding: 30px 0;
+}
+
+h1 {
+  line-height: 1.2;
+  text-align: center;
+  font-size: 80px;
+}
+
+#main {
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+}
+
+#side-menu {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* text-align: center; */
+  align-items: stretch;
+  width: 300px;
+}
+
+button,
+input {
+  width: 100%;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+button.active {
+    background-color: #333;
+    color: #ededed;
+}
+
+#color-picker,
+.slidecontainer {
+  align-self: center;
+  text-align: center;
+}
+
+button:hover,
+input[type="color"]:hover {
+  transform: scale(1.05);
+}
+
+#container {
+  display: inline-grid;
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+  border: 1px solid black;
+}
+
+.grid-item {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 100px;
+}
